@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: digital-7;
+    src: url("./fonts/Digital-7/digital-7\ \(mono\ italic\).ttf");
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -16,11 +21,12 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 30%;
+    padding: 1%;
+    width: 35%;
     height: auto;
     background: #000;
     border: 1px solid #000;
-    border-radius: 50px;
+    border-radius: 3vw;
 }
 
 .item {
@@ -33,25 +39,48 @@
     font-size: 2vw;
     font-weight: bold;
     color: #fff;
-    border: 1px solid #fff;
-    height: auto;
-    width: 13%;
+    height: 5vw;
+    width: 5vw;
     border-radius: 50%;
+    box-shadow: inset 0px 0px 1.3vw 0.1vw rgba(255, 255, 255, 1);
+
+    text-shadow: 8px -13px 2vw rgba(255, 255, 255, 1);
+    transition: 0.5s;
 }
 
-.item:before {}
+/* .item:hover {
+    text-shadow: 0 0 1vw rgba(255, 255, 255, 1);
+    transition: 0s;
+} */
+
+
+.item:active {
+    text-shadow: 0 0 1vw rgba(255, 255, 255, 1);
+    box-shadow: inset 0px 0px 0.8vw 1px rgba(255, 255, 255, 1);
+    transition: 0s;
+}
+
+.item:active {
+    transition: 0s;
+    text-shadow: -16px 8px 1.5vw rgba(255, 255, 255, 1);
+}
 
 .input {
     display: flex;
     justify-content: center;
-    margin: 3% 3%;
-    padding: 2% 4%;
-    font-size: 2vw;
+    margin: 3%;
+    padding: 1%;
+    font-family: digital-7;
     width: 100%;
-    font-size: 3vw;
+    font-size: 5vw;
     font-weight: normal;
     letter-spacing: 0.1vw;
-    color: #fff;
-    border: 1px solid #fff;
+    /* color: #09e72ee5;
+    text-shadow: 2px 2px 2px #09e72ee5; */
+    color: #09e72eda;
+    background: #232323;
+    text-shadow: 0 0 1vw #09e72ee5;
+    border: 0.1vw solid #fff;
     border-radius: 50px;
+    overflow: hidden;
 }
