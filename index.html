@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,47 +13,62 @@
 <body>
     <div class="container">
         <div class="calc">
-            <div class="input">1234567890()</div>
-            <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
-            <div class="item">5</div>
-            <div class="item">6</div>
-            <div class="item">7</div>
-            <div class="item">8</div>
-            <div class="item">9</div>
-            <div class="item">0</div>
-
-            <div class="item">+</div>
-            <div class="item">-</div>
-            <div class="item">*</div>
-            <div class="item">/</div>
-            <div class="item">=</div>
-
-            <div class="item">(</div>
-            <div class="item">)</div>
-            <div class="item">C</div>
-            <div class="item">.</div>
-
+            <div class="input">ds</div>
             <div class="item">deg</div>
             <div class="item">sin</div>
             <div class="item">cos</div>
             <div class="item">tan</div>
             <div class="item">ctg</div>
+
+
+            <div class="item">x<span class="sap">y</span></div><sub></sub>
+            <div class="item">lg</div>
+            <div class="item">In</div>
+            <div class="item">(</div>
+            <div class="item">)</div>
+
+            <div class="item">x<span class="sap">2</span></div><sub></sub>
+            <div class="item">C</div>
+            <div class="item">&#8592</div>
+            <div class="item">&#1642</div>
+            <div class="item" onclick="insert('/')"><i class="fa-solid fa-divide"></i></div>
+
+            <div class="item"><i class="fa-solid fa-square-root-variable"></i></div>
+            <div class="item" onclick="insert('7')">7</div>
+            <div class="item" onclick="insert('8')">8</div>
+            <div class="item" onclick="insert('9')">9</div>
+            <div class="item" onclick="insert('*')"><i class="fa-solid fa-xmark"></i></div>
+
+            <div class="item">x!</div>
+            <div class="item" onclick="insert('4')">4</div>
+            <div class="item" onclick="insert('5')">5</div>
+            <div class="item" onclick="insert('6')">6</div>
+            <div class="item" onclick="insert('-')"><i class="fa-solid fa-minus"></i></div>
+
+            <div class="item">x<span class="sap">-1</span></div><sub></sub>
+            <div class="item" onclick="insert('1')">1</div>
+            <div class="item" onclick="insert('2')">2</div>
+            <div class="item" onclick="insert('3')">3</div>
+            <div class="item" onclick="insert('+')"><i class="fa-solid fa-plus"></i></div>
+
+            <div class="item">П</div>
+            <div class="item">e</div>
+            <div class="item" onclick="insert('0')">0</div>
+            <div class="item" onclick="insert('.')">&#x2c</div>
+            <div class="item"><i class="fa-solid fa-equals"></i></div>
+
             <div class="item">x^y</div>
             <div class="item">lg</div>
             <div class="item">In</div>
-            <div class="item">x!</div>
-            <div class="item">sqr(x)</div>
-            <div class="item">sqrt(x)</div>
+            <div class="item"> &#8730</div>
             <div class="item">1/x</div>
-            <div class="item">П</div>
-            <div class="item">e</div>
-            <div class="item">%</div>
-            <div class="item">^-</div>
+
+
+
+
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

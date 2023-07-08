@@ -9,6 +9,11 @@
     src: url("./fonts/Digital-7/digital-7\ \(mono\ italic\).ttf");
 }
 
+body {
+    background: #000;
+    user-select: none;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -22,11 +27,12 @@
     flex-wrap: wrap;
     flex-direction: row;
     padding: 1%;
-    width: 35%;
+    width: 40%;
     height: auto;
     background: #000;
-    border: 1px solid #000;
+    border: 1px solid #ebebeb;
     border-radius: 3vw;
+
 }
 
 .item {
@@ -36,16 +42,18 @@
     align-self: center;
     margin: 3%;
     padding: 2% 4%;
-    font-size: 2vw;
+    font-family: 'Calibri';
+    font-size: 2.2vw;
     font-weight: bold;
-    color: #fff;
+    color: #ebebeb;
+    cursor: pointer;
     height: 5vw;
     width: 5vw;
+    text-align: center;
     border-radius: 50%;
-    box-shadow: inset 0px 0px 1.3vw 0.1vw rgba(255, 255, 255, 1);
-
-    text-shadow: 8px -13px 2vw rgba(255, 255, 255, 1);
-    transition: 0.5s;
+    box-shadow: inset 0px 0px 1.2vw 0.1vw rgba(255, 255, 255, 1);
+    text-shadow: -1vw 1.3vw 1.5vw rgba(255, 255, 255, 1);
+    transition: 0.7s;
 }
 
 /* .item:hover {
@@ -55,32 +63,37 @@
 
 
 .item:active {
-    text-shadow: 0 0 1vw rgba(255, 255, 255, 1);
+    text-shadow: 1.3vw -1vw 1.5vw rgba(255, 255, 255, 1);
     box-shadow: inset 0px 0px 0.8vw 1px rgba(255, 255, 255, 1);
     transition: 0s;
+    font-size: 1.9vw;
 }
 
-.item:active {
-    transition: 0s;
-    text-shadow: -16px 8px 1.5vw rgba(255, 255, 255, 1);
-}
+
 
 .input {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     margin: 3%;
-    padding: 1%;
+    padding: 1% 4%;
     font-family: digital-7;
     width: 100%;
+    height: auto;
     font-size: 5vw;
+    line-height: 100%;
     font-weight: normal;
     letter-spacing: 0.1vw;
-    /* color: #09e72ee5;
-    text-shadow: 2px 2px 2px #09e72ee5; */
     color: #09e72eda;
     background: #232323;
     text-shadow: 0 0 1vw #09e72ee5;
     border: 0.1vw solid #fff;
     border-radius: 50px;
     overflow: hidden;
+    word-break: break-all;
+}
+
+.sap {
+    font-size: 1.5vw;
+    position: relative;
+    top: -0.6vw;
 }
