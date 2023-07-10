@@ -10,7 +10,15 @@ function insert(num) {
         input.textContent += num;
 }
 
-
+//Логарифмы
+function log(name) {
+    if (name == 'lg') {
+        input.textContent = Math.log10(eval(input.textContent)).toFixed(8);
+    }
+    if (name == 'ln') {
+        input.textContent = Math.log(eval(input.textContent)).toFixed(8);
+    }
+}
 
 //Синусы и косинусы
 function f(name) {
