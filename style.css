@@ -19,6 +19,7 @@ body {
     justify-content: center;
     width: 100%;
     height: auto;
+    padding-top: 3vw;
 }
 
 .calc {
@@ -92,8 +93,71 @@ body {
     word-break: break-all;
 }
 
+.item::after {
+    content: '';
+    background: transparent;
+    height: 5vw;
+    width: 5vw;
+    border: 1.5vw solid black;
+    border-radius: 50%;
+    position: absolute;
+
+}
+
 .sap {
     font-size: 1.5vw;
     position: relative;
     top: -0.6vw;
 }
+
+
+
+h2 {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-family: 'Calibri';
+    font-size: 3.3vw;
+}
+
+p {
+    line-height: 30px;
+}
+
+
+.text {
+    font-family: 'Calibri';
+    width: 40%;
+    z-index: 9;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 7vw;
+}
+
+.text-inner {
+    margin-top: 3vw;
+    position: relative;
+}
+
+.text-inner:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -30px;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #fff);
+}
+
+/* .left-right-sec:nth-child(even) .text {
+    margin-right: -65px;
+    text-align: right;
+}
+
+.left-right-sec:nth-child(even) .text-inner {
+    margin: 55px 190px 0 0;
+}
+
+.left-right-sec:nth-child(even) .text-inner:before {
+    left: inherit;
+    right: -30px;
+} */
